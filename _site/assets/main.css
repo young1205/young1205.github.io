@@ -85,11 +85,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #e4f4f7;
+  color: #629ec5;
   text-decoration: none;
 }
 a:visited {
-  color: #a9dce6;
+  color: #3b78a0;
 }
 a:hover {
   color: #111;
