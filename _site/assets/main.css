@@ -220,7 +220,7 @@ table td {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
-  background-color: #f68d6b;
+  background-color: #ffcccc;
   position: relative;
 }
 
@@ -307,7 +307,7 @@ table td {
 .site-footer {
   border-top: 1px solid #e8e8e8;
   padding: 30px 0;
-  background-color: #f68d6b;
+  background-color: #ffcccc;
 }
 
 .footer-heading {
@@ -331,16 +331,19 @@ table td {
   float: left;
   margin-bottom: 15px;
   padding-left: 15px;
+  color: aliceblue;
 }
 
 .footer-col-1 {
   width: -webkit-calc(35% - (30px / 2));
   width: calc(35% - (30px / 2));
+  color: aliceblue;
 }
 
 .footer-col-2 {
   width: -webkit-calc(20% - (30px / 2));
   width: calc(20% - (30px / 2));
+  color: aliceblue;
 }
 
 .footer-col-3 {
