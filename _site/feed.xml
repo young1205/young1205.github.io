@@ -1,21 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-05T20:58:53-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Julia Young</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2023/07/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2023-07-05T19:17:55-04:00</published><updated>2023-07-05T19:17:55-04:00</updated><id>http://localhost:4000/jekyll/update/2023/07/05/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/07/05/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-16T23:53:37-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Julia Young</title><subtitle>This is my personal website. :)</subtitle><entry><title type="html">Creating a new Jekyll Website</title><link href="http://localhost:4000/jekyll/update/2023/06/05/blog1.html" rel="alternate" type="text/html" title="Creating a new Jekyll Website" /><published>2023-06-05T19:17:55-04:00</published><updated>2023-06-05T19:17:55-04:00</updated><id>http://localhost:4000/jekyll/update/2023/06/05/blog1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/06/05/blog1.html"><![CDATA[<p>I decided to refresh my personal website so I built a new <a href="https://jekyllrb.com">Jekyll</a> website from scratch. Since GitHub Pages is powered by Jekyll, it is easy to deploy a site using GitHub. Another nice feature of Jekyll is that the documentation is through and easy to understand</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<p>To get my website up and running I followed the tutorials <a href="https://jekyllrb.com/docs/installation/macos/">Installing Jekyll on macOS</a> and <a href="https://jekyllrb.com/docs/">Jekyll Quickstart</a>.</p>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<p>The first step if you are on a Mac or Linux machine is to install <a href="https://brew.sh">Homebrew</a>. Homebrew makes it easy to install and update packages. In a terminal run</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+</code></pre></div></div>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>Install chruby and ruby-install with Homebrew</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install chruby ruby-install xz
+</code></pre></div></div>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>Install the latest stable version of Ruby (supported by Jekyll):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby-install ruby 3.1.3
+</code></pre></div></div>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>Configure your shell to automatically use chruby</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" &gt;&gt; ~/.zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" &gt;&gt; ~/.zshrc
+echo "chruby ruby-3.1.3" &gt;&gt; ~/.zshrc # run 'chruby' to see actual version
+</code></pre></div></div>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Creating a new Jekyll Website</title><link href="http://localhost:4000/jekyll/update/2023/06/05/blog1.html" rel="alternate" type="text/html" title="Creating a new Jekyll Website" /><published>2023-06-05T19:17:55-04:00</published><updated>2023-06-05T19:17:55-04:00</updated><id>http://localhost:4000/jekyll/update/2023/06/05/blog1</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2023/06/05/blog1.html"><![CDATA[<p>I decided to refresh my personal website so I built a new Jekyll website from scratch. Although it is an option to use Jekyll themes I decided to create one from the basic Minima theme that occurs when you type:</p>
+<p>Now that ruby is installed you can install jekyll</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+</code></pre></div></div>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">new</span> </code></pre></figure>
+<p>Create a new Jekyll site at ./myblog.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new myblog
+</code></pre></div></div>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I decided to refresh my personal website so I built a new Jekyll website from scratch. Although it is an option to use Jekyll themes I decided to create one from the basic Minima theme that occurs when you type:]]></summary></entry></feed>
+<p>Change into your new directory.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd myblog
+</code></pre></div></div>
+
+<p>To view this locally</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+</code></pre></div></div>
+
+<p>Your website should now be visible at <a href="http://localhost:4000">http://localhost:4000</a></p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[I decided to refresh my personal website so I built a new Jekyll website from scratch. Since GitHub Pages is powered by Jekyll, it is easy to deploy a site using GitHub. Another nice feature of Jekyll is that the documentation is through and easy to understand]]></summary></entry></feed>
