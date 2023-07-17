@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creating a new Jekyll Website"
-date:   2023-06-05 19:17:55 -0400
+date:   2023-07-05 19:17:55 -0400
 categories: jekyll update
 ---
 I decided to refresh my personal website so I built a new [Jekyll](https://jekyllrb.com) website from scratch. Since GitHub Pages is powered by Jekyll, it is easy to deploy a site using GitHub. Another nice feature of Jekyll is that the documentation is through and easy to understand
