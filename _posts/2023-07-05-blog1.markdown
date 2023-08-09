@@ -4,7 +4,7 @@ title:  "Creating a new Jekyll Website"
 date:   2023-07-05 19:17:55 -0400
 categories: jekyll update
 ---
-I decided to refresh my personal website so I built a new [Jekyll](https://jekyllrb.com) website from scratch. Jekyll is an amazing Ruby gem that enables you to easily create a static website from scratch.Since GitHub Pages is powered by Jekyll, it is easy to deploy a site using GitHub. Another nice feature of Jekyll is that the documentation is through and easy to understand
+I decided to refresh my personal website so I built a new [Jekyll](https://jekyllrb.com) website from scratch. Jekyll is an amazing Ruby gem that enables you to easily create a static website from scratch.   Since GitHub Pages is powered by Jekyll, it is easy to deploy a site using GitHub. Another nice feature of Jekyll is that the documentation is through and easy to understand
 
 To get my website up and running I followed the tutorials [Installing Jekyll on macOS](https://jekyllrb.com/docs/installation/macos/) and [Jekyll Quickstart](https://jekyllrb.com/docs/).
 
@@ -12,44 +12,47 @@ The first step if you are on a Mac or Linux machine is to install [Homebrew](htt
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-
+<br>
 Install chruby and ruby-install with Homebrew
 ```
 brew install chruby ruby-install xz
 ```
-
+<br>
 Install the latest stable version of Ruby (supported by Jekyll):
 ```
 ruby-install ruby 3.1.3
 ```
-
+<br>
 Configure your shell to automatically use chruby
 ```
 echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
 echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
 echo "chruby ruby-3.1.3" >> ~/.zshrc # run 'chruby' to see actual version
 ```
-
+<br>
 Now that ruby is installed you can install jekyll
 ```
 gem install jekyll bundler
 ```
-
+<br>
 Create a new Jekyll site at ./myblog.
 ```
 jekyll new myblog
 ```
-
+<br>
 Change into your new directory.
 ```
 cd myblog
 ```
-
+<br>
 To view this locally
 ```
 bundle exec jekyll serve
 ```
-
+<br>
 Your website should now be visible at [http://localhost:4000](http://localhost:4000)
-
-
+<br>
+<br>
+<br>
+# Your blog should look like this !
+![](/assets/MyBlogStart.png)
