@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "Example API"
+date:   2023-07-16 19:17:55 -0400
+categories: api
+---
+# Overview
+My example RESTfull API in Express (Node.js) without a Database for device readings. 
+
+# Requirements 
+The API we are building will recieve and process device readings. The requirements for this API is that it must be able to record new device readings and return a list of readings given a device id.
+
+# Format
+We know Devices send readings via HTTP POST requests with the following JSON: 
+```
+{
+    "id": "36",
+    "readings": [
+        {
+            "timestamp": "2021-09-29",
+            "count": 2
+        },
+        {
+            "timestamp": "2021-09-30",
+            "count": 5
+        },
+        {
+            "timestamp": "2021-10-1",
+            "count": 5
+        }
+    ]
+}
+```
+<br>
+We also know that given a device id clients can fetch the list of readings via a HTTP GET request. The
+API returns the following JSON:
+```
+{
+    "readings": [
+        {
+            "timestamp": "2021-09-29",
+            "count": 2
+        },
+        {
+            "timestamp": "2021-10-1",
+            "count": 5
+        }
+    ]
+}
+```
+
+# Result
+If you are interested in seeing my solution you can access it in the following github repo [Device_Readings](https://github.com/young1205/Device_Readings)
+

@@ -4,7 +4,7 @@ title:  "Creating a new Jekyll Website"
 date:   2023-07-05 19:17:55 -0400
 categories: jekyll update
 ---
-I decided to refresh my personal website so I built a new [Jekyll](https://jekyllrb.com) website from scratch. Jekyll is an amazing Ruby gem that enables you to easily create a static website from scratch.   Since GitHub Pages is powered by Jekyll, it is easy to deploy a site using GitHub. Another nice feature of Jekyll is that the documentation is through and easy to understand
+I decided to refresh my personal website so I built a new [Jekyll](https://jekyllrb.com) website from scratch. Jekyll is an amazing Ruby gem that enables you to easily create a static website.   Since GitHub Pages is powered by Jekyll, it is easy to deploy a site using GitHub. Another nice feature of Jekyll is that the documentation is through and easy to understand
 
 To get my website up and running I followed the tutorials [Installing Jekyll on macOS](https://jekyllrb.com/docs/installation/macos/) and [Jekyll Quickstart](https://jekyllrb.com/docs/).
 
