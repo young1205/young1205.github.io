@@ -6,9 +6,11 @@ categories: api
 ---
 # Overview
 My example RESTfull API in Express (Node.js) without a Database for device readings. 
+<br>
 
 # Requirements 
 The API we are building will recieve and process device readings. The requirements for this API is that it must be able to record new device readings and return a list of readings given a device id.
+<br>
 
 # Format
 We know Devices send readings via HTTP POST requests with the following JSON: 
@@ -48,6 +50,7 @@ API returns the following JSON:
     ]
 }
 ```
+<br>
 
 # Result
 If you are interested in seeing my solution you can access it in the following github repo [Device_Readings](https://github.com/young1205/Device_Readings)
