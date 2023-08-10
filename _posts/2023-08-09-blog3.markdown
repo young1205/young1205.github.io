@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Ruby on Rails - Poetry Website"
+title:  "Ruby on Rails - Poetry Website - Part One"
 date:   2023-08-09 19:17:55 -0400
 categories: ruby on rails
 ---
 # Goal 
-This is a tutorial about how to build a simple Ruby on Rails website that has data on authors and poems. If you want to skip to the final result you can find the github repo [here].
-
+This is a tutorial about how to build a simple Ruby on Rails website that has data on authors and poems. 
+<br>
 # Setup
 To run this website you will need to have installed Ruby on Rails. There is a excellent resource of how to install Ruby on Rails at [http://www.installrails.com](http://www.installrails.com) that has step by step guides for different systems (Mac, Windows)
-
+<br>
 # Tutorial
 Open your terminal and find a convenient location to install your project then build your initial setup
 ```
@@ -20,20 +20,27 @@ then enter your new directory
 cd poetry_project
 ```
 Now you need to open an editor. I personally like using [Visual Studio Code](https://code.visualstudio.com) but you can use your editor of choice.
-
+<br>
 When you open your editor you should see something like this:
-[ROR_P1] 
-
+![](/assets/ROR_P1.png)
+<br>
+<br>
 Go ahead and start the server
 ```
 rails s
 ```
-then open [http://localhost:3000](http://localhost:3000) in a browser window. It should look like:
-[ROR_P2]
+then open [http://localhost:3000](http://localhost:3000) in a browser window. 
+<br>
+<br>
+It should look like:
+![](/assets/ROR_P2.png)
+<br>
+<br>
 Open up a new terminal and enter 
 ```
 rails g controller about index
 ```
+<br>
 Going to `config/routes.rb` change the file to 
 {% highlight ruby  %} 
 Rails.application.routes.draw do
@@ -44,5 +51,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 end
 {% endhighlight %}
+
+To be continued.....
 
 
