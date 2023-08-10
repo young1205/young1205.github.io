@@ -7,9 +7,11 @@ categories: ruby on rails
 # Goal 
 This is a tutorial about how to build a simple Ruby on Rails website that has data on authors and poems. 
 <br>
+
 # Setup
 To run this website you will need to have installed Ruby on Rails. There is a excellent resource of how to install Ruby on Rails at [http://www.installrails.com](http://www.installrails.com) that has step by step guides for different systems (Mac, Windows)
 <br>
+
 # Tutorial
 Open your terminal and find a convenient location to install your project then build your initial setup
 ```
@@ -51,7 +53,7 @@ Rails.application.routes.draw do
   # root "articles#index"
 end
 {% endhighlight %}
-
+<br>
 To be continued.....
 
 
